@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poster & Contact</title>
+  <meta name="description" content="Download my scientific poster and paper, and connect with me." />
+  <meta property="og:title" content="Poster & Contact" />
+  <meta property="og:description" content="Download my scientific poster and paper, and connect with me." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="poster-thumbnail.jpg" />
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --panel: #111318;
+      --muted: #aab2bf;
+      --text: #e6edf3;
+      --accent: #4cc9f0;
+      --accent-2: #b5179e;
+      --radius: 16px;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1000px 600px at 10% 0%, #0f1220 0%, var(--bg) 40%);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(860px, 100%);
+      background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.06);
+      overflow: hidden;
+    }
+    header {
+      padding: 28px 28px 12px;
+      display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    }
+    .avatar {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      display: grid; place-items: center; font-weight: 700; color: #081018;
+    }
+    h1 { font-size: 1.35rem; margin: 0; }
+    p.lead { margin: 4px 0 0; color: var(--muted); }
+
+    .content { padding: 8px 28px 24px; }
+    .panel {
+      display: grid; gap: 16px; grid-template-columns: 1fr; align-items: start;
+    }
+    @media (min-width: 760px) {
+      .panel { grid-template-columns: 2fr 1fr; }
+    }
+
+    .poster {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: calc(var(--radius) - 8px);
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      appearance: none; border: none; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 16px; border-radius: 999px; font-weight: 600; color: #0b0c10;
+      transition: transform 0.06s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 6px 20px rgba(76,201,240,0.25);
+      margin: 6px;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:active { transform: translateY(0); }
+
+    .btn-primary { background: linear-gradient(135deg, var(--accent), #72efdd); }
+    .btn-ghost { background: rgba(255,255,255,0.12); color: var(--text); box-shadow: none; border: 1px solid rgba(255,255,255,0.14); }
+
+    .meta {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: calc(var(--radius) - 8px);
+      padding: 16px;
+    }
+    .meta h2 { font-size: 1rem; margin: 0 0 10px; }
+    .meta dl { margin: 0; display: grid; grid-template-columns: auto 1fr; row-gap: 8px; column-gap: 12px; align-items: baseline; }
+    .meta dt { color: var(--muted); }
+    .meta dd { margin: 0; }
+
+    footer { padding: 10px 28px 20px; color: var(--muted); font-size: 0.9rem; }
+    .small { font-size: 0.92rem; color: var(--muted); }
+    .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: rgba(255,255,255,0.08); margin-left: 8px; }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <header>
+      <div class="avatar" aria-hidden="true">MV</div>
+      <div>
+        <h1>Poster: Geometric Calibration for X-ray Fluorescence Tomography using Multi-Support Consistency<span class="pill">PDF</span></h1>
+        <p class="lead">Download the poster and paper, and connect!</p>
+      </div>
+    </header>
+
+    <section class="content panel">
+      <article class="poster" aria-labelledby="poster-title">
+        <div class="actions">
+          <a class="btn btn-primary" href="poster.pdf" target="_blank" rel="noopener" aria-label="Open poster PDF">⬇ Download Poster (PDF)</a>
+          <a class="btn btn-primary" href="paper.pdf" target="_blank" rel="noopener" aria-label="Open paper PDF">⬇ Download Paper (PDF)</a>
+        </div>
+      </article>
+
+      <aside class="meta">
+        <h2>Contact</h2>
+        <dl>
+          <dt>LinkedIn</dt>
+          <dd><a href="https://www.linkedin.com/in/meovdm" target="_blank" rel="noopener">https://www.linkedin.com/in/meovdm</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:meo.van-duijnen-montijn@esrf.fr">meo.van-duijnen-montijn@esrf.fr</a></dd>
+          <dt>ORCID</dt>
+          <dd><a href="https://orcid.org/0009-0003-8984-6757" target="_blank" rel="noopener">0009-0003-8984-6757</a></dd>
+        </dl>
+      </aside>
+    </section>
+
+    <footer>
+      Meo van Duijnen Montijn <br>
+      ESRF, The European Synchrotron, 71 Avenue des Martyrs, CS40220, 38043 Grenoble Cedex 9, France <br>
+      INSA-Lyon, Université Claude Bernard Lyon 1, CNRS, Inserm, CREATIS UMR 5220, U1294, F-69373, Lyon, France
+    </footer>
+  </main>
+
+  <script>
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
